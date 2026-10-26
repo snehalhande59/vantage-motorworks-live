@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Vantage Motorworks - Premier independent automotive engineering facility. Master certified technicians, factory-calibrated diagnostic tools, and complete service transparency.">
+  <meta name="theme-color" content="#101923">
+  <title>About Us | Vantage Motorworks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+  <div class="ambient-glow-header"></div>
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- FIXED NAVBAR -->
+  <header class="site-header" id="navbar">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Vantage Motorworks Home">
+        <div class="brand-icon-wrap">
+          <svg class="brand-crest" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 2L32 9V19C32 26.5 25.5 32.5 18 34C10.5 32.5 4 26.5 4 19V9L18 2Z" stroke="url(#crest_cyan_grad)" stroke-width="2.5" fill="#101923"/>
+            <path d="M10 13L18 24L26 13" stroke="#20C5D8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 11L18 17L22 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="18" cy="27" r="1.5" fill="#20C5D8"/>
+            <defs>
+              <linearGradient id="crest_cyan_grad" x1="4" y1="2" x2="32" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#20C5D8"/>
+                <stop offset="0.5" stop-color="#D8E0E7"/>
+                <stop offset="1" stop-color="#20C5D8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">VANTAGE</span>
+          <span class="brand-sub">MOTORWORKS</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="brands.html" class="nav-link">Brands</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary btn-glow nav-cta-btn">
+          <span>Book a Service</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-name">VANTAGE</span>
+        <span class="brand-sub">MOTORWORKS</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-gears"></i> Services</a></li>
+      <li><a href="brands.html" class="mobile-nav-link"><i class="fa-solid fa-car-side"></i> Brands</a></li>
+      <li><a href="about.html" class="mobile-nav-link active"><i class="fa-solid fa-shield-halved"></i> About Us</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link"><i class="fa-solid fa-images"></i> Gallery</a></li>
+      <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="booking.html" class="btn btn-primary btn-block mobile-drawer-btn">
+        <span>Book an Appointment</span>
+        <i class="fa-solid fa-calendar-check"></i>
+      </a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-glow"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="page-breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span>About Us</span>
+        </div>
+        <div class="section-tag">
+          <i class="fa-solid fa-building"></i>
+          <span>OUR WORKSHOP &amp; PHILOSOPHY</span>
+        </div>
+        <h1 class="page-hero-title">Engineering Precision. Master Craftsmanship.</h1>
+        <p class="page-hero-subtitle">
+          Vantage Motorworks was founded on a singular principle: deliver dealership-grade engineering and diagnostic accuracy with genuine transparency and enthusiast passion.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT INTRO SECTION -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-intro-grid">
+        <div class="about-intro-text">
+          <div class="section-tag">
+            <i class="fa-solid fa-history"></i>
+            <span>THE VANTAGE STORY</span>
+          </div>
+          <h2>A Modern Sanctuary for Performance &amp; Luxury Automobiles</h2>
+          <p>
+            Operating out of our climate-controlled 24,000 sq. ft. facility, Vantage Motorworks represents the pinnacle of independent automotive service. What began as a dedicated Porsche and BMW powertrain workshop has evolved into the region's benchmark center for 14 major global automotive manufacturers.
+          </p>
+          <p>
+            Unlike conventional repair shops that rely on guess-and-check diagnostics, our facility operates strictly under aerospace and OEM diagnostic protocols. Every fault code is verified with live oscilloscope traces, hydraulic pressure gauges, and digital micrometer tolerances.
+          </p>
+          <div class="about-stat-strip">
+            <div>
+              <strong style="display: block; font-size: 1.8rem; color: var(--accent-cyan); font-family: var(--font-heading);">16+</strong>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Years Experience</span>
+            </div>
+            <div style="border-left: 1px solid rgba(216,224,231,0.1); padding-left: 20px;">
+              <strong style="display: block; font-size: 1.8rem; color: var(--accent-cyan); font-family: var(--font-heading);">14</strong>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">Dedicated Service Bays</span>
+            </div>
+            <div style="border-left: 1px solid rgba(216,224,231,0.1); padding-left: 20px;">
+              <strong style="display: block; font-size: 1.8rem; color: var(--accent-cyan); font-family: var(--font-heading);">99.4%</strong>
+              <span style="font-size: 0.85rem; color: var(--text-muted);">First-Time Fix Rate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-img-frame">
+          <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=80" alt="Vantage Motorworks Workshop Facility" loading="lazy">
+        </div>
+      </div>
+
+      <!-- CORE VALUES -->
+      <div class="section-header-center">
+        <div class="section-tag">
+          <i class="fa-solid fa-compass"></i>
+          <span>FOUNDING PRINCIPLES</span>
+        </div>
+        <h2 class="section-title">Our Guiding Values</h2>
+        <p class="section-subtitle">
+          How our workshop maintains uncompromising standards across every vehicle we touch.
+        </p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Diagnostic Precision</h3>
+          <p>We do not guess. We trace live sensor waveforms, test component resistance, and identify root causes with dealership-level tools.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+          <h3>Absolute Transparency</h3>
+          <p>Digital health inspection videos, itemized upfront estimates, and replaced parts presented in labeled boxes at vehicle pickup.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-shield-check"></i></div>
+          <h3>Genuine Components</h3>
+          <p>We use 100% genuine factory parts or certified tier-1 performance suppliers (Brembo, Bosch, Bilstein, Motul, Mahle).</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h3>Ironclad Warranty</h3>
+          <p>All mechanical craftsmanship and installed components carry our 24-Month / 30,000 km peace-of-mind service warranty.</p>
+        </div>
+      </div>
+
+      <!-- WORKSHOP EQUIPMENT SECTION -->
+      <div style="margin-top: 90px;">
+        <div class="section-header-center">
+          <div class="section-tag">
+            <i class="fa-solid fa-gears"></i>
+            <span>FACILITY INFRASTRUCTURE</span>
+          </div>
+          <h2 class="section-title">Advanced Workshop Equipment</h2>
+          <p class="section-subtitle">
+            A look inside our state-of-the-art diagnostic, mechanical, and restoration infrastructure.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrap"><i class="fa-solid fa-crosshairs"></i></div>
+            <h3 class="feature-title">Hunter 3D Hawkeye Laser</h3>
+            <p class="feature-desc">4-camera 3D laser alignment system measuring camber, caster, toe, and thrust angle down to tenths of a millimeter.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap"><i class="fa-solid fa-laptop-code"></i></div>
+            <h3 class="feature-title">OEM Diagnostic Suites</h3>
+            <p class="feature-desc">Active factory diagnostic workstations: BMW ISTA, Mercedes XENTRY, Porsche PIWIS, VAG ODIS, and Autel MaxiSys Ultra.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+            <h3 class="feature-title">Heated Downdraft Booth</h3>
+            <p class="feature-desc">Climate-controlled dust-free paint booth with infrared baking lamps and computerized German spectrophotometer paint formula matching.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap"><i class="fa-solid fa-wind"></i></div>
+            <h3 class="feature-title">Dual-Gas AC Rechargers</h3>
+            <p class="feature-desc">Fully automated recovery and charging stations supporting both traditional R134a and modern eco-friendly R1234yf climate systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOOKING CTA -->
+      <div class="booking-cta-card" style="margin-top: 80px;">
+        <div class="booking-cta-content">
+          <div class="section-tag">
+            <i class="fa-solid fa-hand-holding-hand"></i>
+            <span>EXPERIENCE THE DIFFERENCE</span>
+          </div>
+          <h2>Tour Our Facility or Schedule Service</h2>
+          <p>Visit our automotive center in Metro Tech Center or book a service bay online for rapid check-in.</p>
+        </div>
+        <div class="booking-cta-action">
+          <a href="booking.html" class="btn btn-primary btn-glow">
+            <span>Book Your Service</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="Vantage Motorworks Home">
+            <div class="brand-icon-wrap">
+              <svg class="brand-crest" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2L32 9V19C32 26.5 25.5 32.5 18 34C10.5 32.5 4 26.5 4 19V9L18 2Z" stroke="#20C5D8" stroke-width="2.5" fill="#101923"/>
+                <path d="M10 13L18 24L26 13" stroke="#20C5D8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 11L18 17L22 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">VANTAGE</span>
+              <span class="brand-sub">MOTORWORKS</span>
+            </div>
+          </a>
+          <p class="footer-bio">Independent automotive engineering center dedicated to precision diagnostics, manufacturer-spec maintenance, and performance optimization.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home Overview</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All 12 Services</a></li>
+            <li><a href="brands.html"><i class="fa-solid fa-angle-right"></i> Supported Brands</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Facility Gallery</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+            <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Specialized Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> Engine Diagnostics &amp; Rebuild</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> Ceramic Brake Overhaul</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> Hunter 3D Laser Alignment</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> 9H Ceramic Paint Coating</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-contact-mini" style="margin-top: 0;">
+            <p><i class="fa-solid fa-phone text-cyan"></i> +1 (800) 555-8268</p>
+            <p><i class="fa-solid fa-envelope text-cyan"></i> service@vantagemotorworks.com</p>
+            <p><i class="fa-solid fa-location-dot text-cyan"></i> 4480 Performance Blvd, Suite 100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright">&copy; <span class="current-year"></span> Vantage Motorworks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

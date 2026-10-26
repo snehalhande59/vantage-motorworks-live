@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a service appointment with Vantage Motorworks. Fast online reservation for maintenance, mechanical repairs, diagnostics, and ceramic detailing.">
+  <meta name="theme-color" content="#101923">
+  <title>Book a Service | Vantage Motorworks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+  <div class="ambient-glow-header"></div>
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- FIXED NAVBAR -->
+  <header class="site-header" id="navbar">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Vantage Motorworks Home">
+        <div class="brand-icon-wrap">
+          <svg class="brand-crest" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 2L32 9V19C32 26.5 25.5 32.5 18 34C10.5 32.5 4 26.5 4 19V9L18 2Z" stroke="url(#crest_cyan_grad)" stroke-width="2.5" fill="#101923"/>
+            <path d="M10 13L18 24L26 13" stroke="#20C5D8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 11L18 17L22 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="18" cy="27" r="1.5" fill="#20C5D8"/>
+            <defs>
+              <linearGradient id="crest_cyan_grad" x1="4" y1="2" x2="32" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#20C5D8"/>
+                <stop offset="0.5" stop-color="#D8E0E7"/>
+                <stop offset="1" stop-color="#20C5D8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">VANTAGE</span>
+          <span class="brand-sub">MOTORWORKS</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="brands.html" class="nav-link">Brands</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary btn-glow nav-cta-btn">
+          <span>Book a Service</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-name">VANTAGE</span>
+        <span class="brand-sub">MOTORWORKS</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-gears"></i> Services</a></li>
+      <li><a href="brands.html" class="mobile-nav-link"><i class="fa-solid fa-car-side"></i> Brands</a></li>
+      <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Us</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link"><i class="fa-solid fa-images"></i> Gallery</a></li>
+      <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="booking.html" class="btn btn-primary btn-block mobile-drawer-btn">
+        <span>Book an Appointment</span>
+        <i class="fa-solid fa-calendar-check"></i>
+      </a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-glow"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="page-breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span>Book a Service</span>
+        </div>
+        <div class="section-tag">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>ONLINE WORKSHOP RESERVATION</span>
+        </div>
+        <h1 class="page-hero-title">Book Your Service Bay</h1>
+        <p class="page-hero-subtitle">
+          Select your vehicle, required service package, and preferred schedule. Receive instant digital confirmation and schedule a complimentary loaner vehicle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING SECTION -->
+  <section class="booking-page-section">
+    <div class="container">
+      
+      <!-- INTERACTIVE SERVICE PRICE ESTIMATOR -->
+      <div class="estimator-card">
+        <div class="estimator-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-calculator"></i>
+            <span>INSTANT ESTIMATOR</span>
+          </div>
+          <h3>Quick Service Price Calculator</h3>
+          <p>Select your vehicle category and desired service to calculate turnaround time and baseline investment.</p>
+        </div>
+
+        <div class="estimator-form-grid">
+          <div class="form-group">
+            <label for="estVehicleType"><i class="fa-solid fa-car"></i> Vehicle Tier</label>
+            <select id="estVehicleType" class="form-control">
+              <option value="sedan">Standard Sedan / Hatchback</option>
+              <option value="suv">Midsize / Full-Size SUV</option>
+              <option value="luxury" selected>European Luxury / Executive</option>
+              <option value="exotic">Exotic Sports / Supercar</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="estServiceType"><i class="fa-solid fa-wrench"></i> Primary Service</label>
+            <select id="estServiceType" class="form-control">
+              <option value="oil">Oil Change &amp; Full Synthetic Maintenance</option>
+              <option value="brakes">Brake Rotor &amp; Ceramic Pad Service</option>
+              <option value="diagnostics">Computer Telemetry &amp; Module Diagnostic</option>
+              <option value="detailing">3-Step Paint Correction &amp; Ceramic Coat</option>
+              <option value="alignment">3D Laser 4-Wheel Alignment</option>
+              <option value="ac">Climate Control &amp; AC R134a/R1234yf Recharge</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="estAddons"><i class="fa-solid fa-plus"></i> Optional Add-On</label>
+            <select id="estAddons" class="form-control">
+              <option value="none">No Add-Ons</option>
+              <option value="cabin">Cabin Carbon Filter &amp; Sanitization (+₹699)</option>
+              <option value="fluid">Brake Fluid DOT 4 Hydraulic Flush (+₹1,199)</option>
+              <option value="engine-wash">Engine Bay Ultrasonic Detailing (+₹1,499)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="estimator-result-bar">
+          <div class="result-item">
+            <span class="result-label">Estimated Turnaround:</span>
+            <span class="result-value" id="estDurationVal">45 Minutes</span>
+          </div>
+          <div class="result-item">
+            <span class="result-label">Estimated Baseline:</span>
+            <span class="result-price" id="estPriceVal">₹2,499</span>
+          </div>
+          <button class="btn btn-primary" id="estApplyBtn">
+            <span>Apply To Reservation</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- MAIN BOOKING FORM CARD -->
+      <div class="form-styled-card" style="max-width: 960px; margin: 0 auto;">
+        <div class="section-tag" style="margin-bottom: 12px;">
+          <i class="fa-solid fa-wrench"></i>
+          <span>RESERVATION DETAILS</span>
+        </div>
+        <h2>Vehicle &amp; Appointment Particulars</h2>
+        <p>Complete the required fields below. We guarantee a diagnostic bay held specifically for your arrival.</p>
+
+        <form id="bookingForm" class="styled-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="customerName"><i class="fa-solid fa-user"></i> Full Name *</label>
+              <input type="text" id="customerName" class="form-control" placeholder="e.g. Alexander Cole" required>
+              <span class="field-error">Please enter your full name</span>
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber"><i class="fa-solid fa-phone"></i> Phone Number *</label>
+              <input type="tel" id="phoneNumber" class="form-control" placeholder="e.g. +1 (555) 234-5678" required>
+              <span class="field-error">Please enter a valid phone number</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="carBrand"><i class="fa-solid fa-car-side"></i> Car Brand *</label>
+              <select id="carBrand" class="form-control" required>
+                <option value="" disabled selected>Select Car Manufacturer</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Audi">Audi</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Kia">Kia</option>
+                <option value="Škoda">Škoda</option>
+                <option value="Ford">Ford</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Tata Motors">Tata Motors</option>
+                <option value="Mahindra">Mahindra</option>
+                <option value="Other">Other Performance Brand</option>
+              </select>
+              <span class="field-error">Please select your vehicle brand</span>
+            </div>
+            <div class="form-group">
+              <label for="carModel"><i class="fa-solid fa-gauge"></i> Car Model &amp; Year *</label>
+              <input type="text" id="carModel" class="form-control" placeholder="e.g. 2023 Porsche Macan GTS" required>
+              <span class="field-error">Please enter model and year</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="serviceSelection"><i class="fa-solid fa-wrench"></i> Required Service *</label>
+            <select id="serviceSelection" class="form-control" required>
+              <option value="" disabled selected>Choose from our 12 Services</option>
+              <option value="Engine Repair & Overhaul">Engine Repair &amp; Overhaul</option>
+              <option value="Car Washing & Detailing">Car Washing &amp; Detailing</option>
+              <option value="Oil Change & Maintenance">Oil Change &amp; Maintenance</option>
+              <option value="Brake Inspection & Repair">Brake Inspection &amp; Repair</option>
+              <option value="Wheel Alignment & Tyre Services">Wheel Alignment &amp; Tyre Services</option>
+              <option value="AC Repair & Climate Control">AC Repair &amp; Climate Control</option>
+              <option value="Battery Replacement">Battery Replacement</option>
+              <option value="Denting & Painting">Denting &amp; Painting</option>
+              <option value="Computer Diagnostics">Computer Diagnostics</option>
+              <option value="Car Interior Cleaning">Car Interior Cleaning</option>
+              <option value="Suspension Repair">Suspension Repair</option>
+              <option value="Emergency Roadside Assistance">Emergency Roadside Assistance</option>
+              <option value="Full Comprehensive Inspection">Full 50-Point Comprehensive Inspection</option>
+            </select>
+            <span class="field-error">Please select a service</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="preferredDate"><i class="fa-solid fa-calendar-day"></i> Preferred Date *</label>
+              <input type="date" id="preferredDate" class="form-control" required>
+              <span class="field-error">Please select an available future date</span>
+            </div>
+            <div class="form-group">
+              <label for="preferredTime"><i class="fa-solid fa-clock"></i> Preferred Time Window *</label>
+              <select id="preferredTime" class="form-control" required>
+                <option value="" disabled selected>Select Drop-off Window</option>
+                <option value="08:00 AM - 10:00 AM">08:00 AM - 10:00 AM (Early Drop-off)</option>
+                <option value="10:00 AM - 12:00 PM">10:00 AM - 12:00 PM</option>
+                <option value="12:00 PM - 02:00 PM">12:00 PM - 02:00 PM (Lunch Window)</option>
+                <option value="02:00 PM - 04:00 PM">02:00 PM - 04:00 PM</option>
+                <option value="04:00 PM - 06:00 PM">04:00 PM - 06:00 PM (Late Drop-off)</option>
+              </select>
+              <span class="field-error">Please pick an available time slot</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="additionalNotes"><i class="fa-solid fa-pen-to-square"></i> Additional Symptoms / Diagnostic Notes</label>
+            <textarea id="additionalNotes" rows="3" class="form-control" placeholder="Describe any vibrations, warning lights, unusual sounds, or specific service preferences..."></textarea>
+          </div>
+
+          <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 12px;">
+            <button type="submit" class="btn btn-primary btn-block btn-glow" id="submitBookingBtn">
+              <span class="btn-text">Confirm Service Booking</span>
+              <span class="btn-spinner hidden"><i class="fa-solid fa-circle-notch fa-spin"></i></span>
+              <i class="fa-solid fa-chevron-right btn-icon"></i>
+            </button>
+            <p style="font-size: 0.78rem; color: var(--text-muted); text-align: center; margin: 0;">
+              <i class="fa-solid fa-shield-halved text-cyan"></i> Frontend demonstration mode: Generates instant verifiable confirmation pass without sending private data to external servers.
+            </p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONFIRMATION SUCCESS MODAL -->
+  <div class="modal-backdrop" id="bookingSuccessModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container success-modal glass-card">
+      <div class="success-header">
+        <div class="success-icon-wrap">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <h2>Service Appointment Confirmed!</h2>
+        <p>Thank you, <strong id="successCustomerName">Client</strong>. Your appointment request has been registered in our schedule queue.</p>
+      </div>
+
+      <div class="ticket-card">
+        <div class="ticket-header">
+          <span class="ticket-brand">VANTAGE MOTORWORKS</span>
+          <span class="ticket-code" id="successBookingCode">VMW-8391</span>
+        </div>
+        <div class="ticket-body">
+          <div class="ticket-row">
+            <div>
+              <span class="ticket-label">VEHICLE</span>
+              <strong id="successCar">2023 Porsche Macan</strong>
+            </div>
+            <div>
+              <span class="ticket-label">SELECTED SERVICE</span>
+              <strong id="successService">Brake Inspection &amp; Repair</strong>
+            </div>
+          </div>
+          <div class="ticket-row">
+            <div>
+              <span class="ticket-label">APPOINTMENT DATE</span>
+              <strong id="successDate">Nov 02, 2026</strong>
+            </div>
+            <div>
+              <span class="ticket-label">TIME WINDOW</span>
+              <strong id="successTime">10:00 AM - 12:00 PM</strong>
+            </div>
+          </div>
+          <div class="ticket-row">
+            <div>
+              <span class="ticket-label">CONTACT PHONE</span>
+              <strong id="successPhone">+1 555-0192</strong>
+            </div>
+            <div>
+              <span class="ticket-label">STATUS</span>
+              <span class="ticket-status-pill"><i class="fa-solid fa-clock"></i> Bay Reserved</span>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-footer">
+          <i class="fa-solid fa-bell text-cyan"></i>
+          <span>Our service advisor will call 1 hour prior to your check-in window.</span>
+        </div>
+      </div>
+
+      <div class="success-actions">
+        <button class="btn btn-primary" id="successPrintBtn">
+          <i class="fa-solid fa-print"></i>
+          <span>Save Confirmation Receipt</span>
+        </button>
+        <button class="btn btn-outline-white" id="successCloseBtn">
+          <span>Done</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="Vantage Motorworks Home">
+            <div class="brand-icon-wrap">
+              <svg class="brand-crest" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2L32 9V19C32 26.5 25.5 32.5 18 34C10.5 32.5 4 26.5 4 19V9L18 2Z" stroke="#20C5D8" stroke-width="2.5" fill="#101923"/>
+                <path d="M10 13L18 24L26 13" stroke="#20C5D8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 11L18 17L22 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">VANTAGE</span>
+              <span class="brand-sub">MOTORWORKS</span>
+            </div>
+          </a>
+          <p class="footer-bio">Independent automotive engineering center dedicated to precision diagnostics, manufacturer-spec maintenance, and performance optimization.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home Overview</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All 12 Services</a></li>
+            <li><a href="brands.html"><i class="fa-solid fa-angle-right"></i> Supported Brands</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Facility Gallery</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-contact-mini" style="margin-top: 0;">
+            <p><i class="fa-solid fa-phone text-cyan"></i> +1 (800) 555-8268</p>
+            <p><i class="fa-solid fa-envelope text-cyan"></i> service@vantagemotorworks.com</p>
+            <p><i class="fa-solid fa-location-dot text-cyan"></i> 4480 Performance Blvd, Suite 100</p>
+          </div>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-heading">Emergency Dispatch</h4>
+          <p>For urgent breakdown, flat tyre, or towing assistance:</p>
+          <a href="tel:+18005558268" class="btn btn-outline-cyan btn-sm" style="margin-top: 8px;">
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>Call 24/7 Hotline</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright">&copy; <span class="current-year"></span> Vantage Motorworks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our full spectrum of 12 precision automotive engineering services at Vantage Motorworks. Engine overhauls, ceramic detailing, brakes, suspension, diagnostics and roadside care.">
+  <meta name="theme-color" content="#101923">
+  <title>Automotive Services | Vantage Motorworks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+  <div class="ambient-glow-header"></div>
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- FIXED NAVBAR -->
+  <header class="site-header" id="navbar">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Vantage Motorworks Home">
+        <div class="brand-icon-wrap">
+          <svg class="brand-crest" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 2L32 9V19C32 26.5 25.5 32.5 18 34C10.5 32.5 4 26.5 4 19V9L18 2Z" stroke="url(#crest_cyan_grad)" stroke-width="2.5" fill="#101923"/>
+            <path d="M10 13L18 24L26 13" stroke="#20C5D8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 11L18 17L22 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="18" cy="27" r="1.5" fill="#20C5D8"/>
+            <defs>
+              <linearGradient id="crest_cyan_grad" x1="4" y1="2" x2="32" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#20C5D8"/>
+                <stop offset="0.5" stop-color="#D8E0E7"/>
+                <stop offset="1" stop-color="#20C5D8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">VANTAGE</span>
+          <span class="brand-sub">MOTORWORKS</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+          <li class="nav-item"><a href="brands.html" class="nav-link">Brands</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary btn-glow nav-cta-btn">
+          <span>Book a Service</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-name">VANTAGE</span>
+        <span class="brand-sub">MOTORWORKS</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link active"><i class="fa-solid fa-gears"></i> Services</a></li>
+      <li><a href="brands.html" class="mobile-nav-link"><i class="fa-solid fa-car-side"></i> Brands</a></li>
+      <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Us</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link"><i class="fa-solid fa-images"></i> Gallery</a></li>
+      <li><a href="contact.html" class="mobile-nav-link"><i class="fa-solid fa-map-location-dot"></i> Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="booking.html" class="btn btn-primary btn-block mobile-drawer-btn">
+        <span>Book an Appointment</span>
+        <i class="fa-solid fa-calendar-check"></i>
+      </a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-glow"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="page-breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span>Services</span>
+        </div>
+        <div class="section-tag">
+          <i class="fa-solid fa-sliders"></i>
+          <span>ALL 12 SPECIALIZED DISCIPLINES</span>
+        </div>
+        <h1 class="page-hero-title">Precision Automotive Services</h1>
+        <p class="page-hero-subtitle">
+          From dealer-level telemetry diagnostics and supercar engine overhauls to concourse ceramic detailing, explore our full spectrum of specialized automotive care.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL 12 SERVICES SECTION -->
+  <section class="services-section">
+    <div class="container">
+      <!-- Filter Controls -->
+      <div class="gallery-filters" style="margin-bottom: 40px;">
+        <button class="filter-btn service-filter-btn active" data-filter="all">All 12 Services</button>
+        <button class="filter-btn service-filter-btn" data-filter="powertrain">Powertrain &amp; Mechanical</button>
+        <button class="filter-btn service-filter-btn" data-filter="diagnostics">Diagnostics &amp; Electrical</button>
+        <button class="filter-btn service-filter-btn" data-filter="chassis">Safety &amp; Chassis</button>
+        <button class="filter-btn service-filter-btn" data-filter="detailing">Detailing &amp; Bodywork</button>
+      </div>
+
+      <!-- Services Grid (Populated with all 12 services) -->
+      <div class="services-grid" id="allServicesGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+
+      <!-- Workshop Standards Grid -->
+      <div class="features-grid" style="margin-top: 60px;">
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h3 class="feature-title">Manufacturer Warranty Safe</h3>
+          <p class="feature-desc">Every scheduled maintenance procedure complies with European and global OEM warranty guidelines without compromising factory coverage.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-video"></i>
+          </div>
+          <h3 class="feature-title">Live Video Health Inspection</h3>
+          <p class="feature-desc">Receive digital video walk-arounds from the inspecting master technician directly to your phone before any component is replaced.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3 class="feature-title">24-Month / 30,000 km Warranty</h3>
+          <p class="feature-desc">We stand firmly behind our engineering. All parts and mechanical craftsmanship carry our ironclad nationwide service warranty.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrap">
+            <i class="fa-solid fa-car-on"></i>
+          </div>
+          <h3 class="feature-title">Courtesy Executive Loaners</h3>
+          <p class="feature-desc">Complimentary premium loaner vehicles or chauffeur drop-off services available for major overhauls and multi-day detailing packages.</p>
+        </div>
+      </div>
+
+      <!-- Booking CTA Banner -->
+      <div class="booking-cta-card" style="margin-top: 60px;">
+        <div class="booking-cta-content">
+          <div class="section-tag">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>RESERVE TODAY</span>
+          </div>
+          <h2>Ready to Schedule Your Vehicle?</h2>
+          <p>Book online with your preferred date and time. Our master advisors will prepare a dedicated diagnostic bay prior to your arrival.</p>
+        </div>
+        <div class="booking-cta-action">
+          <a href="booking.html" class="btn btn-primary btn-glow">
+            <span>Book Your Service</span>
+            <i class="fa-solid fa-calendar-plus"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="Vantage Motorworks Home">
+            <div class="brand-icon-wrap">
+              <svg class="brand-crest" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2L32 9V19C32 26.5 25.5 32.5 18 34C10.5 32.5 4 26.5 4 19V9L18 2Z" stroke="#20C5D8" stroke-width="2.5" fill="#101923"/>
+                <path d="M10 13L18 24L26 13" stroke="#20C5D8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 11L18 17L22 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">VANTAGE</span>
+              <span class="brand-sub">MOTORWORKS</span>
+            </div>
+          </a>
+          <p class="footer-bio">
+            Independent automotive engineering center dedicated to precision diagnostics, manufacturer-spec maintenance, and performance optimization.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home Overview</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All 12 Services</a></li>
+            <li><a href="brands.html"><i class="fa-solid fa-angle-right"></i> Supported Brands</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Facility Gallery</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+            <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Specialized Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> Engine Diagnostics &amp; Rebuild</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> Ceramic Brake Overhaul</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> Hunter 3D Laser Alignment</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> 9H Ceramic Paint Coating</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> R1234yf Climate Control</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> 24/7 Flatbed Towing Rescue</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-heading">Automotive Insights</h4>
+          <p>Subscribe for seasonal maintenance guides and priority booking slots.</p>
+          <form class="footer-subscribe-form" id="newsletterForm">
+            <div class="subscribe-input-wrap">
+              <input type="email" placeholder="Enter your email" required class="form-control" id="newsletterEmail">
+              <button type="submit" class="btn btn-primary btn-sm" aria-label="Subscribe">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+            <span class="newsletter-msg" id="newsletterMsg"></span>
+          </form>
+          <div class="footer-contact-mini">
+            <p><i class="fa-solid fa-phone text-cyan"></i> +1 (800) 555-8268</p>
+            <p><i class="fa-solid fa-location-dot text-cyan"></i> 4480 Performance Blvd, Suite 100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright">&copy; <span class="current-year"></span> Vantage Motorworks. All rights reserved.</p>
+        <div class="legal-links">
+          <a href="contact.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="contact.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SERVICE DETAILS MODAL -->
+  <div class="modal-backdrop" id="serviceModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalServiceTitle">
+    <div class="modal-container glass-card">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close Service Details">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-grid">
+        <div class="modal-image-col">
+          <div class="modal-img-wrap">
+            <img src="" alt="Service preview" id="modalServiceImg" class="modal-img">
+            <div class="modal-img-overlay"></div>
+            <span class="modal-badge" id="modalServiceBadge">OEM Certified</span>
+          </div>
+          <div class="modal-quick-specs">
+            <div class="spec-box">
+              <span class="spec-label">EST. DURATION</span>
+              <span class="spec-value" id="modalServiceDuration">2 - 4 Hours</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">WARRANTY</span>
+              <span class="spec-value" id="modalServiceWarranty">24 Months</span>
+            </div>
+            <div class="spec-box highlight">
+              <span class="spec-label">STARTING AT</span>
+              <span class="spec-value" id="modalServicePrice">₹1,999</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-content-col">
+          <div class="modal-service-category" id="modalServiceCategory">Precision Automotive Service</div>
+          <h2 class="modal-service-title" id="modalServiceTitle">Service Name</h2>
+          <p class="modal-service-desc" id="modalServiceDesc">
+            Full comprehensive overview describing how our master technicians perform this service with factory tooling.
+          </p>
+
+          <h4 class="modal-section-title">What is Included in This Service:</h4>
+          <ul class="modal-feature-list" id="modalServiceFeatures"></ul>
+
+          <div class="modal-action-bar">
+            <button class="btn btn-primary btn-glow" id="modalBookNowBtn">
+              <span>Book This Service Now</span>
+              <i class="fa-solid fa-calendar-check"></i>
+            </button>
+            <button class="btn btn-outline-white" id="modalDismissBtn">
+              <span>Close</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

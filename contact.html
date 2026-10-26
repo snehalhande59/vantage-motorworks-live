@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Vantage Motorworks - Get in touch with our master service advisors, schedule a shop tour, or dispatch 24/7 emergency roadside towing.">
+  <meta name="theme-color" content="#101923">
+  <title>Contact Us | Vantage Motorworks</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+
+  <div class="ambient-glow-header"></div>
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- FIXED NAVBAR -->
+  <header class="site-header" id="navbar">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="Vantage Motorworks Home">
+        <div class="brand-icon-wrap">
+          <svg class="brand-crest" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 2L32 9V19C32 26.5 25.5 32.5 18 34C10.5 32.5 4 26.5 4 19V9L18 2Z" stroke="url(#crest_cyan_grad)" stroke-width="2.5" fill="#101923"/>
+            <path d="M10 13L18 24L26 13" stroke="#20C5D8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 11L18 17L22 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="18" cy="27" r="1.5" fill="#20C5D8"/>
+            <defs>
+              <linearGradient id="crest_cyan_grad" x1="4" y1="2" x2="32" y2="34" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#20C5D8"/>
+                <stop offset="0.5" stop-color="#D8E0E7"/>
+                <stop offset="1" stop-color="#20C5D8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">VANTAGE</span>
+          <span class="brand-sub">MOTORWORKS</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="brands.html" class="nav-link">Brands</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="booking.html" class="btn btn-primary btn-glow nav-cta-btn">
+          <span>Book a Service</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-name">VANTAGE</span>
+        <span class="brand-sub">MOTORWORKS</span>
+      </div>
+      <button class="drawer-close" id="drawerClose" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="services.html" class="mobile-nav-link"><i class="fa-solid fa-gears"></i> Services</a></li>
+      <li><a href="brands.html" class="mobile-nav-link"><i class="fa-solid fa-car-side"></i> Brands</a></li>
+      <li><a href="about.html" class="mobile-nav-link"><i class="fa-solid fa-shield-halved"></i> About Us</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link"><i class="fa-solid fa-images"></i> Gallery</a></li>
+      <li><a href="contact.html" class="mobile-nav-link active"><i class="fa-solid fa-map-location-dot"></i> Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="booking.html" class="btn btn-primary btn-block mobile-drawer-btn">
+        <span>Book an Appointment</span>
+        <i class="fa-solid fa-calendar-check"></i>
+      </a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-glow"></div>
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="page-breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-angle-right"></i>
+          <span>Contact</span>
+        </div>
+        <div class="section-tag">
+          <i class="fa-solid fa-headset"></i>
+          <span>DIRECT COMMUNICATIONS</span>
+        </div>
+        <h1 class="page-hero-title">Contact Our Service Facility</h1>
+        <p class="page-hero-subtitle">
+          Connect directly with master technicians, request specialized performance consultation, or dispatch 24/7 priority emergency flatbed recovery.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CONTENT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout-grid">
+        
+        <!-- Left: Contact Form -->
+        <div class="contact-form-column">
+          <div class="form-styled-card">
+            <h2>Send Us an Inquiry</h2>
+            <p>Our service advisory team replies to digital inquiries within 2 business hours.</p>
+
+            <form id="contactInquiryForm" class="styled-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName"><i class="fa-solid fa-user"></i> Full Name *</label>
+                  <input type="text" id="contactName" class="form-control" placeholder="e.g. Julian Sterling" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail"><i class="fa-solid fa-envelope"></i> Email Address *</label>
+                  <input type="email" id="contactEmail" class="form-control" placeholder="e.g. j.sterling@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactPhone"><i class="fa-solid fa-phone"></i> Phone Number</label>
+                  <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. +1 (555) 234-5678">
+                </div>
+                <div class="form-group">
+                  <label for="contactSubject"><i class="fa-solid fa-tag"></i> Inquiry Topic</label>
+                  <select id="contactSubject" class="form-control">
+                    <option value="service">Service &amp; Maintenance Question</option>
+                    <option value="engine">Engine / Powertrain Overhaul Consultation</option>
+                    <option value="detailing">Ceramic Coating &amp; Paint Correction</option>
+                    <option value="track">Track Preparation &amp; Dyno Tuning</option>
+                    <option value="warranty">Warranty &amp; Fleet Accounts</option>
+                    <option value="other">General Inquiries</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage"><i class="fa-solid fa-comment-dots"></i> Your Message *</label>
+                <textarea id="contactMessage" rows="5" class="form-control" placeholder="Please describe your vehicle make, model, year, and specific requirements or questions..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-glow" style="margin-top: 10px;">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right: Facility Details & Emergency Hotline -->
+        <div class="contact-details-column">
+          <!-- 24/7 Towing Card -->
+          <div class="emergency-banner">
+            <div class="emergency-pulse">
+              <i class="fa-solid fa-truck-pickup"></i>
+            </div>
+            <div class="emergency-details">
+              <span class="emergency-tag">24/7 RAPID DISPATCH</span>
+              <h4>Roadside Towing &amp; Breakdown</h4>
+              <p>Direct priority line to our on-call hydraulic flatbed rescue haulers.</p>
+              <a href="tel:+18005558268" class="emergency-phone">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>+1 (800) 555-VANTAGE</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Facility Location Card -->
+          <div class="form-styled-card" style="padding: 30px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 20px; border-bottom: 1px solid rgba(216,224,231,0.08); padding-bottom: 12px;">Workshop Headquarters</h3>
+            
+            <div style="display: flex; gap: 14px; margin-bottom: 20px;">
+              <i class="fa-solid fa-location-dot text-cyan" style="font-size: 1.1rem; margin-top: 4px;"></i>
+              <div>
+                <strong style="display: block; color: #FFFFFF; font-size: 0.95rem;">Facility Address</strong>
+                <p style="font-size: 0.88rem; color: var(--text-body); margin: 0;">4480 Performance Boulevard, Suite 100<br>Automotive District, Metro Tech Center</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; margin-bottom: 20px;">
+              <i class="fa-solid fa-clock text-cyan" style="font-size: 1.1rem; margin-top: 4px;"></i>
+              <div>
+                <strong style="display: block; color: #FFFFFF; font-size: 0.95rem;">Operating Hours</strong>
+                <p style="font-size: 0.88rem; color: var(--text-body); margin: 0;">
+                  Monday – Friday: 07:30 AM – 07:00 PM<br>
+                  Saturday: 08:00 AM – 05:00 PM<br>
+                  Sunday: Emergency Towing &amp; Key Drop Only
+                </p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 14px; margin-bottom: 24px;">
+              <i class="fa-solid fa-envelope text-cyan" style="font-size: 1.1rem; margin-top: 4px;"></i>
+              <div>
+                <strong style="display: block; color: #FFFFFF; font-size: 0.95rem;">Direct Communications</strong>
+                <p style="font-size: 0.88rem; color: var(--text-body); margin: 0;">
+                  service@vantagemotorworks.com<br>
+                  support@vantagemotorworks.com
+                </p>
+              </div>
+            </div>
+
+            <!-- Stylized Dark Navy Map -->
+            <div class="styled-map-container">
+              <div class="map-layer-simulated">
+                <div class="map-grid-bg"></div>
+                <div class="map-streets">
+                  <div class="street-line street-horizontal-1"></div>
+                  <div class="street-line street-horizontal-2"></div>
+                  <div class="street-line street-vertical-1"></div>
+                  <div class="street-line street-vertical-2"></div>
+                </div>
+                <div class="map-pin-pulse">
+                  <div class="pin-ring"></div>
+                  <div class="pin-core">
+                    <i class="fa-solid fa-wrench"></i>
+                  </div>
+                  <div class="pin-tooltip">
+                    <strong>Vantage Motorworks</strong>
+                    <span>14 Service Bays Open</span>
+                  </div>
+                </div>
+              </div>
+              <div class="map-action-overlay">
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-glass">
+                  <i class="fa-solid fa-diamond-turn-right"></i>
+                  <span>Open in Google Maps</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FAQ Section -->
+      <div style="margin-top: 80px;">
+        <div class="section-header-center">
+          <div class="section-tag">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>FREQUENTLY ASKED QUESTIONS</span>
+          </div>
+          <h2 class="section-title">Common Questions &amp; Answers</h2>
+        </div>
+
+        <div class="faq-cards-grid">
+          <div class="feature-card">
+            <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Will servicing my car at Vantage void my factory warranty?</h3>
+            <p style="font-size: 0.88rem; color: var(--text-body); margin: 0;">No. Under statutory consumer protection laws, independent servicing does not void your factory warranty provided manufacturer-specified components and procedures are followed, which we document in full.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Do you offer courtesy vehicles while my car is serviced?</h3>
+            <p style="font-size: 0.88rem; color: var(--text-body); margin: 0;">Yes. We maintain a fleet of complimentary executive loaner vehicles for services requiring more than 4 hours, subject to reservation availability.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3 style="font-size: 1.15rem; margin-bottom: 8px;">Are the spare parts used genuinely authentic?</h3>
+            <p style="font-size: 0.88rem; color: var(--text-body); margin: 0;">100%. We source components directly from original equipment manufacturers and tier-1 suppliers, accompanied by manufacturer serial numbers and warranties.</p>
+          </div>
+
+          <div class="feature-card">
+            <h3 style="font-size: 1.15rem; margin-bottom: 8px;">How long does a computerized diagnostic scan take?</h3>
+            <p style="font-size: 0.88rem; color: var(--text-body); margin: 0;">A full topology scan and live sensor telemetry evaluation takes approximately 45 minutes, followed by a detailed digital report explaining our findings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" aria-label="Vantage Motorworks Home">
+            <div class="brand-icon-wrap">
+              <svg class="brand-crest" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 2L32 9V19C32 26.5 25.5 32.5 18 34C10.5 32.5 4 26.5 4 19V9L18 2Z" stroke="#20C5D8" stroke-width="2.5" fill="#101923"/>
+                <path d="M10 13L18 24L26 13" stroke="#20C5D8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 11L18 17L22 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">VANTAGE</span>
+              <span class="brand-sub">MOTORWORKS</span>
+            </div>
+          </a>
+          <p class="footer-bio">Independent automotive engineering center dedicated to precision diagnostics, manufacturer-spec maintenance, and performance optimization.</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home Overview</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-angle-right"></i> All 12 Services</a></li>
+            <li><a href="brands.html"><i class="fa-solid fa-angle-right"></i> Supported Brands</a></li>
+            <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Facility Gallery</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+            <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Specialized Services</h4>
+          <ul class="footer-link-list">
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> Engine Diagnostics &amp; Rebuild</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> Ceramic Brake Overhaul</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> Hunter 3D Laser Alignment</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-wrench"></i> 9H Ceramic Paint Coating</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-contact-mini" style="margin-top: 0;">
+            <p><i class="fa-solid fa-phone text-cyan"></i> +1 (800) 555-8268</p>
+            <p><i class="fa-solid fa-envelope text-cyan"></i> service@vantagemotorworks.com</p>
+            <p><i class="fa-solid fa-location-dot text-cyan"></i> 4480 Performance Blvd, Suite 100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright">&copy; <span class="current-year"></span> Vantage Motorworks. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
